@@ -1,0 +1,268 @@
+.page {
+  padding: 4px 4px 24px;
+}
+
+.centerText {
+  padding: 40px 0;
+  text-align: center;
+  color: #6b7280;
+}
+
+.errorBox {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 24px 24px 20px;
+  border-radius: 16px;
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  text-align: center;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.topRow {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.3fr);
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.mainCard {
+  padding-bottom: 14px;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.label {
+  font-size: 12px;
+  color: #9ca3af;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.statusArea {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.statusBadge {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.statusSuccess {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.statusFail {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.statusCancel {
+  background: #fee4e2;
+  color: #f97316;
+}
+
+.statusPending {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.summaryRow {
+  display: flex;
+  gap: 32px;
+}
+
+.summaryRow > div {
+  flex: 1;
+}
+
+.summaryValue {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* 가맹점 카드 */
+.cardTitleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.linkBtn {
+  font-size: 12px;
+  color: #2563eb;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #eff6ff;
+}
+
+.linkBtn:hover {
+  background: #dbeafe;
+}
+
+.merchantInfo {
+  font-size: 13px;
+  color: #111827;
+}
+
+.merchantCodeRow,
+.merchantNameRow,
+.merchantStatusRow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.merchantCodeLabel {
+  color: #6b7280;
+}
+
+.merchantCodeValue,
+.merchantNameValue {
+  font-weight: 500;
+}
+
+.merchantStatusBadge {
+  padding: 4px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.merchantStatusActive {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.merchantStatusInactive {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.merchantHint {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* 상세 테이블 */
+.detailTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.detailTable th {
+  width: 140px;
+  text-align: left;
+  padding: 8px 10px;
+  color: #6b7280;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.detailTable td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.detailTable tr:last-child th,
+.detailTable tr:last-child td {
+  border-bottom: none;
+}
+
+.note {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.note code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  background: #f3f4f6;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* 하단 버튼 */
+.footerActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.backBtn,
+.toDashboardBtn {
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.backBtn {
+  font-size: 13px;
+  padding: 6px 12px;
+  margin-right: 10px;
+  border-radius: 999px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.16);
+}
+
+.backBtn:hover {
+  background: #ffedd5;
+  border-color: #f97316;
+  color: #9a3412;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.16);
+}
+
+.toDashboardBtn {
+  font-size: 13px;
+  padding: 6px 12px;
+  margin-right: 10px;
+  border-radius: 999px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.16);
+}
+
+.toDashboardBtn:hover {
+  background: #ffedd5;
+  border-color: #f97316;
+  color: #9a3412;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.16);
+}

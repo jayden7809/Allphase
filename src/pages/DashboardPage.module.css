@@ -1,0 +1,275 @@
+.page {
+  width: 100%;
+  padding-top: 4px;
+}
+
+.header {
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.headerTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.headerSub {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.filterGroup {
+  display: flex;
+  gap: 8px;
+}
+
+.filterBtn {
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  padding: 6px 14px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #4b5563;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.filterBtn:hover {
+  background: #f3f4f6;
+}
+
+.filterActive {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.summaryCard {
+  border-top: 4px solid #f97316;
+}
+
+.summaryLabel {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.summaryValue {
+  margin-top: 6px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2937;
+  display: flex;
+  align-items: baseline;
+}
+
+.slash {
+  margin: 0 4px;
+  color: #9ca3af;
+}
+
+.trendRow {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+}
+
+.trendIcon {
+  font-size: 10px;
+}
+
+.trendText {
+  font-size: 11px;
+}
+
+.trendUp {
+  color: #16a34a;
+}
+
+.trendDown {
+  color: #dc2626;
+}
+
+.trendFlat {
+  color: #6b7280;
+}
+
+.middleGrid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.sectionTitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+.sectionSub {
+  font-size: 11px;
+  color: #9ca3af;
+  margin-bottom: 8px;
+}
+
+.legendRow {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+}
+
+.legendLabel {
+  min-width: 30px;
+}
+
+.legendValue {
+  font-weight: 600;
+}
+
+.statusBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.statusRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statusLabel {
+  font-size: 13px;
+  color: #374151;
+}
+
+.statusCount {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.success {
+  color: #16a34a;
+}
+
+.fail {
+  color: #dc2626;
+}
+
+.cancel {
+  color: #f97316;
+}
+
+.pending {
+  color: #3b82f6;
+}
+
+.bottomGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  margin-bottom: 12px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.table thead {
+  background: #eef1f5;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.emptyBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.noDataIcon {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.noData {
+  text-align: center;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.error {
+  margin-top: 12px;
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.loading {
+  margin-top: 12px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.txLink,
+.merchantLink {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.txLink:hover,
+.merchantLink:hover {
+  text-decoration: underline;
+}

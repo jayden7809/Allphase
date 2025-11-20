@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pretendard", "Inter", sans-serif;
+}
+body {
+  background: #e5e8ec;
+  color: #1f2937;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5c7cb;
+  border-radius: 6px;
+}

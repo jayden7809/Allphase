@@ -1,0 +1,485 @@
+.page {
+  width: 100%;
+  padding-top: 4px;
+}
+
+/* 헤더 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.headerTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.headerSub {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.headerButton {
+  font-size: 13px;
+  padding: 6px 12px;
+  margin-right: 10px;
+  border-radius: 999px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.16);
+
+}
+
+.headerButton:hover {
+  background: #ffedd5;
+  border-color: #f97316;
+  color: #9a3412;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.16);
+}
+
+.editButton{
+  background: #6b7280;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+/* 여기부터 전체 교체 */
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  color: #374151;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+  transition: background 0.15s ease, border-color 0.15s ease,
+    transform 0.08s ease, box-shadow 0.15s ease;
+}
+
+.backLink::before {
+  content: "←";
+  font-size: 13px;
+}
+
+.backLink:hover {
+  background: #ffedd5;
+  border-color: #f97316;
+  color: #9a3412;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.16);
+}
+
+.backLink:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.12);
+}
+
+/* 공통 카드 */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* 상단: 기본정보 + 요약 */
+.topRow {
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+/* 기본정보 카드 */
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.infoHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: #ffedd5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #9a3412;
+  font-size: 18px;
+}
+
+.mchtName {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.mchtCode {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.infoMetaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+}
+
+.infoMetaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.metaLabel {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.metaValue {
+  font-size: 13px;
+  color: #111827;
+}
+
+.infoContact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 10px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* 상태 뱃지 (기본정보 내) */
+.status-active,
+.status_active {
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-inactive,
+.status_inactive {
+  background: #e5e7eb;
+  color: #4b5563;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* 요약 카드 */
+.summaryCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: #fafafa;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.summaryLabel {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.summaryValue {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 4px;
+}
+
+.statusSummary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.statusChip {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+.chipSuccess {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.chipFail {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.chipCancel {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.chipPending {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+/* 카드 공통 헤더 */
+.cardHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 8px;
+}
+
+.sectionTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.sectionSub {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+/* 도넛 차트 섹션 */
+.chartCard {
+  margin-bottom: 18px;
+}
+
+.donutRow {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.donutChartWrap {
+  height: 260px;
+}
+
+.donutSummary {
+  align-self: stretch;
+  border-left: 1px solid #e5e7eb;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.donutSummaryTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.donutList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  color: #374151;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.donutList li strong {
+  font-weight: 700;
+  margin-left: 2px;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  margin-right: 6px;
+}
+
+.dotSuccess {
+  background: #22c55e;
+}
+
+.dotFail {
+  background: #f97373;
+}
+
+.dotCancel {
+  background: #fb923c;
+}
+
+.dotPending {
+  background: #60a5fa;
+}
+
+/* 하단: 라인차트 + 최근 거래 */
+.bottomRow {
+  display: grid;
+  grid-template-columns: 1.4fr 1.1fr;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.lineCard {
+  padding-bottom: 16px;
+}
+
+.lineChartWrap {
+  height: 260px;
+}
+
+/* 최근 거래 테이블 */
+.recentCard {
+  padding-bottom: 12px;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  margin-top: 4px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table th,
+.table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.table thead {
+  background: #eef1f5;
+}
+
+.table th {
+  font-size: 12px;
+  color: #4b5563;
+}
+
+/* 상태 배지 (최근 거래 테이블용) */
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+.statusBadge.success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.statusBadge.fail {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.statusBadge.cancel {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.statusBadge.pending {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+/* Empty / 에러 / 로딩 공통 */
+.emptyBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 26px 0;
+}
+
+.noDataIcon {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.noData {
+  text-align: center;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.error {
+  margin-top: 12px;
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.loading {
+  margin-top: 12px;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* 반응형 (좁은 화면 대응) */
+@media (max-width: 1024px) {
+  .topRow,
+  .bottomRow,
+  .donutRow {
+    grid-template-columns: 1fr;
+  }
+
+  .donutSummary {
+    border-left: none;
+    border-top: 1px solid #e5e7eb;
+    padding-left: 0;
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+}
